@@ -11,7 +11,7 @@ import SwiftUI
 struct rijksmuseum_iosApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(service: RijksmuseumServiceImpl(session: URLSession.shared))
         }
     }
 }

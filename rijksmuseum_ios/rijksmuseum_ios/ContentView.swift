@@ -8,35 +8,35 @@
 import SwiftUI
 import Combine
 
-var subscriptions = Set<AnyCancellable>()
 struct ContentView: View {
+
+    @StateObject var viewModel: RijksmuseumListViewModel
     
+    init(service: RijksmuseumService) {
+        self._viewModel = StateObject(wrappedValue: RijksmuseumListViewModel(service: service))
+    }
 
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-            Button("Fetch") {
-                let service = RijksmuseumService()
-                
-                service.fetchArtworks(page: 1)
-                    .sink(receiveCompletion: { completion in
-                        if case let .failure(error) = completion {
-                            print(error)
-                        }
-                    }, receiveValue: { artworks in
-                        print(artworks) // Array of Artwork objects
-                    })
-                    .store(in: &subscriptions)
+        ZStack {
+            if viewModel.isLoading {
+                Color.black.opacity(0.3).ignoresSafeArea()
+                ProgressView()
             }
-
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+                Text("Hello, world!")
+                Button("Fetch") {
+                    viewModel.fetchArtworks(page: 0)
+                }
+                
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(service: RijksmuseumServiceImpl(session: URLSession.shared))
 }
