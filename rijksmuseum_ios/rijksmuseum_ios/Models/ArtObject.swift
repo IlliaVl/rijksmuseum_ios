@@ -5,7 +5,7 @@
 //  Created by Illia Vlasov on 12.04.2024.
 //
 
-struct ArtObject: Codable {
+struct ArtObject: Codable, Identifiable {
     let links: Links
     let id, objectNumber, title: String
     let hasImage: Bool

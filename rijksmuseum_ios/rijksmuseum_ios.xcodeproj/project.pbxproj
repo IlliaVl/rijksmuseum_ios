@@ -16,6 +16,11 @@
 		2E1DCD2D2BC94163001C2B97 /* RijksmuseumListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1DCD2C2BC94163001C2B97 /* RijksmuseumListViewModel.swift */; };
 		2E1DCD2F2BC983C9001C2B97 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1DCD2E2BC983C9001C2B97 /* URLSessionProtocol.swift */; };
 		2E1DCD332BC9862E001C2B97 /* URLSession+URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1DCD322BC9862E001C2B97 /* URLSession+URLSessionProtocol.swift */; };
+		2E1DCD382BCAA17E001C2B97 /* RijksmuseumServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1DCD372BCAA17E001C2B97 /* RijksmuseumServiceTests.swift */; };
+		2E1DCD392BCAA1C6001C2B97 /* RijksmuseumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1DCD292BC93BBD001C2B97 /* RijksmuseumService.swift */; };
+		2E1DCD3A2BCAA1CD001C2B97 /* RijksmuseumServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1DCD1D2BC830D1001C2B97 /* RijksmuseumServiceImpl.swift */; };
+		2E1DCD3B2BCAA1D1001C2B97 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1DCD2E2BC983C9001C2B97 /* URLSessionProtocol.swift */; };
+		2E1DCD3C2BCAA1D7001C2B97 /* URLSession+URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1DCD322BC9862E001C2B97 /* URLSession+URLSessionProtocol.swift */; };
 		2E32E4382BC6E32C00D5E4E1 /* rijksmuseum_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32E4372BC6E32C00D5E4E1 /* rijksmuseum_iosApp.swift */; };
 		2E32E43A2BC6E32C00D5E4E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32E4392BC6E32C00D5E4E1 /* ContentView.swift */; };
 		2E32E43C2BC6E32F00D5E4E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E32E43B2BC6E32F00D5E4E1 /* Assets.xcassets */; };
@@ -23,6 +28,12 @@
 		2E32E4492BC6E32F00D5E4E1 /* rijksmuseum_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32E4482BC6E32F00D5E4E1 /* rijksmuseum_iosTests.swift */; };
 		2E32E4532BC6E32F00D5E4E1 /* rijksmuseum_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32E4522BC6E32F00D5E4E1 /* rijksmuseum_iosUITests.swift */; };
 		2E32E4552BC6E32F00D5E4E1 /* rijksmuseum_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32E4542BC6E32F00D5E4E1 /* rijksmuseum_iosUITestsLaunchTests.swift */; };
+		2E48BE152BD024D100C53D88 /* ArtObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1DCD232BC92FB0001C2B97 /* ArtObject.swift */; };
+		2E48BE162BD024D800C53D88 /* RijksmuseumResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1DCD212BC92F84001C2B97 /* RijksmuseumResponse.swift */; };
+		2E48BE172BD024DF00C53D88 /* ArtImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1DCD272BC92FF3001C2B97 /* ArtImage.swift */; };
+		2E48BE182BD024E500C53D88 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1DCD252BC92FE4001C2B97 /* Links.swift */; };
+		2E4BD30C2BCDA06500C88682 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 2E4BD30B2BCDA06500C88682 /* Quick */; };
+		2E4BD30F2BCDA07600C88682 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 2E4BD30E2BCDA07600C88682 /* Nimble */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +63,7 @@
 		2E1DCD2C2BC94163001C2B97 /* RijksmuseumListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RijksmuseumListViewModel.swift; sourceTree = "<group>"; };
 		2E1DCD2E2BC983C9001C2B97 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		2E1DCD322BC9862E001C2B97 /* URLSession+URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+URLSessionProtocol.swift"; sourceTree = "<group>"; };
+		2E1DCD372BCAA17E001C2B97 /* RijksmuseumServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RijksmuseumServiceTests.swift; sourceTree = "<group>"; };
 		2E32E4342BC6E32C00D5E4E1 /* rijksmuseum_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rijksmuseum_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E32E4372BC6E32C00D5E4E1 /* rijksmuseum_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rijksmuseum_iosApp.swift; sourceTree = "<group>"; };
 		2E32E4392BC6E32C00D5E4E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E4BD30C2BCDA06500C88682 /* Quick in Frameworks */,
+				2E4BD30F2BCDA07600C88682 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				2E32E4482BC6E32F00D5E4E1 /* rijksmuseum_iosTests.swift */,
+				2E1DCD372BCAA17E001C2B97 /* RijksmuseumServiceTests.swift */,
 			);
 			path = rijksmuseum_iosTests;
 			sourceTree = "<group>";
@@ -202,6 +217,8 @@
 			dependencies = (
 			);
 			name = rijksmuseum_ios;
+			packageProductDependencies = (
+			);
 			productName = rijksmuseum_ios;
 			productReference = 2E32E4342BC6E32C00D5E4E1 /* rijksmuseum_ios.app */;
 			productType = "com.apple.product-type.application";
@@ -220,6 +237,10 @@
 				2E32E4462BC6E32F00D5E4E1 /* PBXTargetDependency */,
 			);
 			name = rijksmuseum_iosTests;
+			packageProductDependencies = (
+				2E4BD30B2BCDA06500C88682 /* Quick */,
+				2E4BD30E2BCDA07600C88682 /* Nimble */,
+			);
 			productName = rijksmuseum_iosTests;
 			productReference = 2E32E4442BC6E32F00D5E4E1 /* rijksmuseum_iosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -274,6 +295,10 @@
 				Base,
 			);
 			mainGroup = 2E32E42B2BC6E32C00D5E4E1;
+			packageReferences = (
+				2E4BD30A2BCDA06500C88682 /* XCRemoteSwiftPackageReference "Quick" */,
+				2E4BD30D2BCDA07600C88682 /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
 			productRefGroup = 2E32E4352BC6E32C00D5E4E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -334,7 +359,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E48BE182BD024E500C53D88 /* Links.swift in Sources */,
+				2E48BE172BD024DF00C53D88 /* ArtImage.swift in Sources */,
+				2E48BE162BD024D800C53D88 /* RijksmuseumResponse.swift in Sources */,
+				2E48BE152BD024D100C53D88 /* ArtObject.swift in Sources */,
+				2E1DCD3B2BCAA1D1001C2B97 /* URLSessionProtocol.swift in Sources */,
+				2E1DCD3C2BCAA1D7001C2B97 /* URLSession+URLSessionProtocol.swift in Sources */,
+				2E1DCD392BCAA1C6001C2B97 /* RijksmuseumService.swift in Sources */,
+				2E1DCD3A2BCAA1CD001C2B97 /* RijksmuseumServiceImpl.swift in Sources */,
 				2E32E4492BC6E32F00D5E4E1 /* rijksmuseum_iosTests.swift in Sources */,
+				2E1DCD382BCAA17E001C2B97 /* RijksmuseumServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,6 +684,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2E4BD30A2BCDA06500C88682 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		2E4BD30D2BCDA07600C88682 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2E4BD30B2BCDA06500C88682 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E4BD30A2BCDA06500C88682 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		2E4BD30E2BCDA07600C88682 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E4BD30D2BCDA07600C88682 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2E32E42C2BC6E32C00D5E4E1 /* Project object */;
 }

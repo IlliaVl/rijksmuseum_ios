@@ -10,7 +10,7 @@ import Combine
 
 class RijksmuseumListViewModel: ObservableObject {
     
-    @Published var isLoading = false
+    @Published var isLoading = true
     @Published var artworks: [ArtObject] = []
     
     private let service: RijksmuseumService

@@ -34,3 +34,27 @@ final class rijksmuseum_iosTests: XCTestCase {
     }
 
 }
+
+class MockURLProtocol1: URLProtocol {
+    override class func canInit(with request: URLRequest) -> Bool {
+        return true
+    }
+    
+    override class func canInit(with task: URLSessionTask) -> Bool {
+        return true
+    }
+    
+    override class func canonicalRequest(for request: URLRequest) -> URLRequest {
+        return request
+    }
+    
+    override func startLoading() {
+        self.client?.urlProtocol(self, didLoad: String("Some data").data(using: .utf8)!)
+        // mark that we've finished
+        self.client?.urlProtocolDidFinishLoading(self)
+    }
+    
+    override func stopLoading() {
+        
+    }
+}
